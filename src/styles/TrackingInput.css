@@ -1,0 +1,142 @@
+.tracking-input-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  .tracking-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .tracking-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tracking-subtitle {
+    color: #6b7280;
+    font-size: 1rem;
+  }
+  
+  .tracking-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .tracking-input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    border: 2px solid #d1d5db;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .tracking-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+  
+  .tracking-input::placeholder {
+    color: #9ca3af;
+  }
+  
+  .track-button {
+    padding: 1rem 2rem;
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .track-button:hover:not(:disabled) {
+    background-color: #334155;
+  }
+  
+  .track-button:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+  }
+  
+  .track-icon {
+    font-size: 1.25rem;
+  }
+  
+  .loading-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .error-message {
+    max-width: 600px;
+    margin: 1rem auto 0;
+    padding: 1rem;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .error-message p {
+    color: #dc2626;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tracking-input-container {
+      padding: 1rem;
+    }
+    
+    .tracking-title {
+      font-size: 1.5rem;
+    }
+    
+    .input-group {
+      flex-direction: column;
+    }
+    
+    .tracking-input {
+      border-radius: 8px 8px 0 0;
+      border-right: 2px solid #d1d5db;
+    }
+    
+    .track-button {
+      border-radius: 0 0 8px 8px;
+      justify-content: center;
+    }
+  }
